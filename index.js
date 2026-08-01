@@ -1,10 +1,17 @@
 const express = require('express')
 const app = express()
 
+app.set('views', './views')
+app.set('view engine', 'pug')
+
 var nums = 0;
 
 app.get('/', (req, res) => {
-    res.send("Hello world " + (nums++))
+    res.render('index', { title: "trang chu", key: "heeeee" })
+})
+
+app.get('/:id', (req, res) => {
+    res.send(req.params.id)
 })
 
 app.get('/blog', (req, res) => {
