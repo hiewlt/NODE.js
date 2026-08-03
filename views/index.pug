@@ -1,10 +1,42 @@
+- var fullName = "Le Trung Hieu"
+- var age = 18
+- var imagee = "<div>Hello</div>"
+doctype html 
 html 
     head 
         link(rel="stylesheet", href="/css/style.css")
         link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css")
         title= title
     body 
+        div Ten #{fullName}
+        p Tuoi #{age}
         button(class="btn btn-primary") Click Me!
-        h1=key 
-        img(src="/images/anh.jpg", alt="", srcset="")
+        button.btn.btn-light Click Me
+        h1=key
+        p !{imagee} 
+        p. 
+            hello 
+            Im LTH
+            Đây là một đoạn văn rất dài rất dài rất dài rất dài rất dài rất dài rất dài...
+        ul 
+            li item 1
+            li item 2
+            li item 3
+        table 
+            thead   
+                tr
+                    th STT 
+                    th Name 
+                    th SĐT 
+            tbody 
+                tr 
+                    th 1
+                    th Hieu 
+                    th 0703270972
+                tr 
+                    th 2
+                    th Haa 
+                    th 1111
+        // comments
+        
         script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js") 
