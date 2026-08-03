@@ -39,15 +39,24 @@ html
         //-             th Haa 
         //-             th 1111
         // comments
-        - 
-            var infoUser = {
-                name: "Le Trung Hieu",
-                sdt: 0900
-            }   
-        p Họ Tên: #{infoUser.name}
-        p Tuổi: #{infoUser.age ? infoUser.age : "chưa có"}
-        if(infoUser.sdt) 
-            p SĐT: #{infoUser.sdt}
-        else 
-            p SĐT: Chưa có
+        //- - 
+        //-     var infoUser = {
+        //-         name: "Le Trung Hieu",
+        //-         sdt: 0900
+        //-     }   
+        //- p Họ Tên: #{infoUser.name}
+        //- p Tuổi: #{infoUser.age ? infoUser.age : "chưa có"}
+        //- if(infoUser.sdt) 
+        //-     p SĐT: #{infoUser.sdt}
+        //- else 
+        //-     p SĐT: Chưa có
+
+        -
+            var trangthai = "dangduyet"
+
+        case (trangthai)
+            when ("dangduyet")
+                p Đang duyệt
+            when ("daduyet")
+                p Đã duyệt
         script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js") 
